@@ -33,7 +33,7 @@ ApplicationWindow {
                 triggeredOnStart: false
 
                 onTriggered: {
-                    TrafficLight.toggle_light(TrafficLight.light = ((TrafficLight.light + 1) % 3));
+                    TrafficLight.light = ((TrafficLight.light + 1) % 3)
                 }
             }
 

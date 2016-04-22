@@ -11,10 +11,6 @@ int main(int argc, char *argv[])
 
     Traffic_Light traffic_light;
 
-//    app.setOrganizationName("GameSmith");
-//    app.setOrganizationDomain("GameSmith.com");
-//    app.setApplicationName("Traffic Light");
-
     engine.rootContext()->setContextProperty("TrafficLight", &traffic_light);
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));

@@ -3,6 +3,7 @@
 
 #include <QDebug>
 #include <QObject>
+#include <QColor>
 
 enum Color
 {
@@ -18,7 +19,7 @@ public:
 public slots:
 
     void set_color(Color color);
-    int get_color();
+    QColor get_color();
     void set_light(bool is_on);
     bool get_light();
 private:

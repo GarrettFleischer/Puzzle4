@@ -11,9 +11,17 @@ void Light::set_color(Color color)
     m_color = color;
 }
 
-int Light::get_color()
+QColor Light::get_color()
 {
-    return static_cast<int>(m_color);
+    switch(m_color)
+    {
+    case RED:
+        return Qt::red;
+    case YELLOW:
+        return Qt::yellow;
+    case GREEN:
+        return Qt::green;
+    }
 }
 
 void Light::set_light(bool is_on)
